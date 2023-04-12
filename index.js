@@ -6,6 +6,9 @@ const app = express()
 app.get("/",(req,res)=>{
     res.send("hellow sumeet....")
 })
+app.get("/hi",(req,res)=>{
+    res.send("hi")
+})
 app.get("/api/chats",(req,res)=>{
     res.send(chats)
 })
