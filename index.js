@@ -1,9 +1,13 @@
 const express = require('express')
+const {chats} = require('./data')
 
 const app = express()
 
 app.get("/",(req,res)=>{
     res.send("hellow sumeet....")
+})
+app.get("/api/chats",(req,res)=>{
+    res.send(chats)
 })
 
 app.listen(5002, console.log(`App started`)
